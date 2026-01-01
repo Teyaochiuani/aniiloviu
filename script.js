@@ -40,7 +40,7 @@ const story = [
     { type: 'game' },
 
     // 7. FINAL
-    { text: "¡FELIZ AÑO NUEVO CORAZON TE QUIERO MUCHO! ✨🎆", type: 'final', animation: "animate__jackInTheBox", duration: 15000 }
+    { text: "¡FELIZ AÑO NUEVO CORAZON! ✨🎆", type: 'final', animation: "animate__jackInTheBox", duration: 15000 }
 ];
 
 // Configuraciones Globales
