@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para Ti ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Animate.css para animaciones fáciles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <!-- WhatsApp Screen Simulation -->
+    <div id="whatsapp-screen" class="hidden">
+        <div class="wa-header">
+            <div class="wa-avatar">
+                <img src="assets/profile.png" alt="Profile"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <div class="wa-info">
+                <div class="wa-name">Ana Martínez</div>
+                <div class="wa-status">en línea</div>
+            </div>
+        </div>
+        <div class="wa-body" id="wa-conversation">
+            <div class="date-divider" style="text-align: center; margin: 10px 0; opacity: 0.6; font-size: 0.8rem;">
+                12/28/2025</div>
+            <div class="wa-message">Como que OK <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">22:50</span>
+            </div>
+            <div class="wa-message">Que paso <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">22:50</span>
+            </div>
+            <div class="wa-message">Umm <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">23:21</span>
+            </div>
+            <div class="wa-message">Jaasi? <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">23:21</span>
+            </div>
+            <div class="wa-message">Me dejaste en visto :c <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">23:23</span>
+            </div>
+            <div class="wa-message">Amm okey? <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">23:58</span>
+            </div>
+
+            <div class="date-divider" style="text-align: center; margin: 10px 0; opacity: 0.6; font-size: 0.8rem;">
+                12/29/2025</div>
+            <div class="wa-message">Ammmm bueno, me estas ignorando <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">02:16</span>
+            </div>
+            <div class="wa-message">Ya me vas a hacer caso? O vas a saguir asi, para saber <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">20:18</span>
+            </div>
+            <div class="wa-message">Si no me dices nada no se que pasa <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">20:20</span>
+            </div>
+            <div class="wa-message out">Pues si todo esta bien <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">22:48</span>
+            </div>
+            <div class="wa-message out">o paso algo que no sepa? <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">22:49</span>
+            </div>
+
+            <div class="date-divider" style="text-align: center; margin: 10px 0; opacity: 0.6; font-size: 0.8rem;">
+                12/30/2025</div>
+            <div class="wa-message">No se, me ignoraste un dia, para mi eso es raro. <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">03:42</span>
+            </div>
+            <div class="wa-message">Realmente eso es lo que yo quisiera saber, si va a ser normal que no me hables a
+                veces por un dia entero, y ver que si me ignoras <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">03:44</span>
+            </div>
+            <div class="wa-message">Por que si lo hiciste <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">03:45</span>
+            </div>
+            <div class="wa-message">Tan asi fue, que hasta en IG me quitaste el apodo, apodo que no me habias quitado
+                antes, asi que, si me vas a seguir diciendo que todo bien y que no me hablas entonces por que no
+                quieres.... <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">03:47</span>
+            </div>
+            <div class="wa-message out">Idk <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">08:46</span>
+            </div>
+            <div class="wa-message out">Todo bien <span class="wa-time"
+                    style="font-size: 0.7em; float: right; margin-left: 10px; margin-top: 5px; opacity: 0.7;">08:46</span>
+            </div>
+        </div>
+        <div class="wa-footer">
+            <textarea id="wa-input" placeholder="Mensaje" readonly rows="1"></textarea>
+            <button class="wa-send">></button>
+        </div>
+    </div>
+
+    <!-- Game Container -->
+    <div id="game-container" class="hidden">
+        <div class="game-ui">
+            <div class="game-instructions animate__animated animate__pulse animate__infinite"
+                style="font-size: 1.5rem; margin-top: 20px;">¡PRESIONA RÁPIDO PARA JUNTARNOS! ❤️</div>
+        </div>
+
+        <div class="meetup-scene">
+            <div class="track">
+                <div class="avatar" id="avatar-left">🤵</div>
+                <div class="heart-goal">❤️</div>
+                <div class="avatar" id="avatar-right">💃</div>
+            </div>
+        </div>
+
+        <div class="mash-controls">
+            <button id="mash-btn">¡CORRE! 🏃💨</button>
+        </div>
+    </div>
+
+    <!-- Main Story Container -->
+    <div id="story-container">
+        <!-- El contenido se inyectará aquí con JS -->
+        <h1 class="animate__animated animate__fadeIn">Cargando...</h1>
+    </div>
+
+    <div class="click-indicator"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
